@@ -200,6 +200,8 @@ def _backward(
     log_ki, log_ko = log(contract.ki_ratio), log(contract.ko_ratio)
     if not x[1] < log_ki < log_ko < x[-2]:
         raise ValueError("keep both barriers at least one log-spot interval inside the PDE domain")
+    if x[0] + (market.rate - market.dividend) * contract.maturity >= 0:
+        raise ValueError("widen the PDE domain so the lower forward stays below the put strike")
 
     with np.errstate(over="raise", invalid="raise"):
         spots = np.exp(x) * contract.initial_spot
