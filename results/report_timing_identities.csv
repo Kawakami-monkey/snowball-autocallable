@@ -1,0 +1,4 @@
+diagnostic,implied,reported
+Mean life implied by reported KO probability and KO month,5.056361,5.74
+Mean KO month implied by reported KO probability and mean life,3.51646564575,2.59
+Upper bound on V1 using reported KO probability and mean KO coupon,0.03187728,0.04213

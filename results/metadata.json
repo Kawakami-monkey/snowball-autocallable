@@ -1,0 +1,54 @@
+{
+  "profile": "full",
+  "settings": {
+    "mc_paths": [
+      5000,
+      15000,
+      50000,
+      100000,
+      300000
+    ],
+    "space_steps": [
+      160,
+      320,
+      640,
+      1280,
+      2560
+    ],
+    "greek_paths": 160000,
+    "hedge_paths": 10000,
+    "risk_grid": {
+      "space_steps": 1280,
+      "time_substeps": 4,
+      "log_width": 1.0,
+      "rannacher": true
+    },
+    "sweep_grid": {
+      "space_steps": 520,
+      "time_substeps": 4,
+      "log_width": 1.0,
+      "rannacher": true
+    }
+  },
+  "seeds": {
+    "pricing": 42,
+    "greeks": 123,
+    "hedging": 7701,
+    "paths_figure": 4242
+  },
+  "batch_size": 8192,
+  "greek_bumps": {
+    "spot_fraction": 0.005,
+    "volatility": 0.005,
+    "rate": 0.001
+  },
+  "python": "3.12.14",
+  "platform": "Darwin arm64",
+  "libraries": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2"
+  },
+  "runtime_seconds": 30.358564166002907
+}
