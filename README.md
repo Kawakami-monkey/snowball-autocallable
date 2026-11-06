@@ -71,3 +71,5 @@ print(mc.price, mc.estimate.confidence_interval, pde.price)
 ## Scope
 
 The experiments use synthetic paths with constant volatility, rates and carry. They omit jumps, a volatility surface, counterparty credit, liquidity limits, operational lags and model calibration to market data. The effective dividend yield is a proxy for the report's basis and funding scenario. A futures hedge also introduces margin cash flows, rolls and basis risk. The hedge results measure replication under the assumed model and a linear trading fee. [Model and experimental details](TECHNICAL_REPORT.md)
+
+Development used an AI coding assistant; model design choices, numerical results and conclusions were reviewed and verified by the author.
